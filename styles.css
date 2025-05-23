@@ -1,0 +1,47 @@
+/* ============================= */
+/* Header styles                */
+/* ============================= */
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* ============================= */
+/* Welcome Banner styles        */
+/* ============================= */
+#welcomeBanner {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.highlight {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* Image and Table Styles       */
+/* ============================= */
+.event-img {
+  width: 120px;
+  height: 100px;
+  border: 2px solid #555;
+}
+
+/* ============================= */
+/* Footer styles                */
+/* ============================= */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
