@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav></nav>
+
+  <!-- Main -->
+  <main></main>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+</html>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#events">Events</a>
+  <a href="#contact">Contact</a>
+  <a href="help.html" target="_blank">Help</a>
+</nav>
+
+<section id="home"></section>
+<section id="events"></section>
+<section id="contact"></section>
+<style>
+  #welcomeBanner {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+  }
+  .highlight {
+    font-weight: bold;
+    color: rgb(28, 42, 238);
+  }
+</style>
+
+<div id="welcomeBanner">
+  Welcome, user! <span style="color:rgb(255, 210, 210); font-weight:bold;">Have a great time!</span>
+</div>
+
+<p class="highlight">Don’t miss our upcoming events!</p>
+<table>
+  <caption>Highlights from Past Events</caption>
+  <tr>
+    <td><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/green-white-rounded-charity-event-flyer-design-template-1353fcc39fed1800606395c77366665a_screen.jpg?ts=1709139619" alt="Event 1" title="Event 1" class="event-img"></td>
+    <td><img src="https://humansofev.info/wp-content/uploads/2025/03/India-EV-Show-Chennai-2025.webp" alt="Event 2" title="Event 2" class="event-img"></td>
+    <td><img src="https://i0.wp.com/destinationinfinity.org/wp-content/uploads/2025/01/featured-img-1-1.jpg?fit=1920%2C1080&ssl=1" alt="Event 3" title="Event 3" class="event-img"></td>
+  </tr>
+  <tr>
+    <td><img src="https://cdn-az.allevents.in/events7/banners/9f229590-1138-11f0-8b2b-bba0373c8a6a-rimg-w1200-h600-dcda3430-gmir.jpg?v=1743759534" alt="Event 4" title="Event 4" class="event-img"></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TF7LXgG5BjNfAj7MzlmL2_PuURKxcuahgg&s" alt="Event 5" title="Event 5" class="event-img"></td>
+    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMVido3_ejIEMcT6cqSNEOsIx1hnRuFv9UqA&s" alt="Event 6" title="Event 6" class="event-img"></td>
+  </tr>
+</table>
+
+<style>
+  .event-img {
+    border: 2px solid #333;
+    width: 100px;
+    height: 100px;
+  }
+</style>
+<form onsubmit="showConfirmation(); return false;">
+  <input type="text" name="name" placeholder="Your Name" required autofocus><br>
+  <input type="email" name="email" placeholder="Your Email" required><br>
+  <input type="date" name="date" required><br>
+  <select name="eventType" required>
+    <option value="">Select Event</option>
+    <option value="music">Music</option>
+    <option value="sports">Sports</option>
+  </select><br>
+  <textarea placeholder="Your Message"></textarea><br>
+  <button type="submit">Register</button>
+  <output id="confirmation"></output>
+</form>
+
+<script>
+  function showConfirmation() {
+    document.getElementById("confirmation").innerText = "Thank you for registering!";
+  }
+</script>
+<input type="text" id="phone" onblur="validatePhone()">
+<select onchange="showFee(this.value)">
+  <option value="10">$10 - Music</option>
+  <option value="20">$20 - Sports</option>
+</select>
+<p id="feeDisplay"></p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKWOGHVhvamwS2Fg3sTAHt6_-jyDUhT9vaww&s" ondblclick="this.style.width='300px'" style="width:100px;">
+<textarea onkeyup="countChars(this)"></textarea>
+<p id="charCount"></p>
+
+<script>
+function validatePhone() {
+  let phone = document.getElementById("phone").value;
+  if (!/^\d{10}$/.test(phone)) alert("Enter 10-digit number.");
+}
+function showFee(value) {
+  document.getElementById("feeDisplay").innerText = "Fee: $" + value;
+}
+function countChars(el) {
+  document.getElementById("charCount").innerText = el.value.length + " characters";
+}
+</script>
+<video id="promo" controls oncanplay="videoReady()">
+  <source src="https://rr1---sn-npoe7ns7.googlevideo.com/videoplayback?expire=1748006841&ei=WSMwaJDyJcyLkucPpL-juAQ&ip=63.246.132.241&id=o-APfnm857zsc1bgdoW7z_K3MW0K_HPt5f3XWx1n8dOAmh&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AecWEAbbXZO0_aoR38K3Cwqik8Npe5QDir5aIw2nrkX7UaF66PWIUckO6jhc2SzBZYC4Gr-wNMobI2Q5&vprv=1&svpuc=1&mime=video%2Fmp4&ns=r_rTg7qzzCEbQuoqKutbd2QQ&rqh=1&gir=yes&clen=1190438&ratebypass=yes&dur=10.816&lmt=1728398545350473&lmw=1&c=TVHTML5&sefc=1&txp=6300224&n=F90DvGKkVo5zvA&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRQIhALKIsYz6QPojPjYWeZyEIpaaRNk_-Kz9lsj6TnugspHmAiBAfsda1t0Nukmvp83IRvHhz1BSYZPnX1XBDbw57dLTZg%3D%3D&redirect_counter=1&cm2rm=sn-ab5eel7e&rrc=80&fexp=24350590,24350737,24350827,24350961,24351173,24351177,24351495,24351528,24351594,24351638,24351658,24351661,24351759,24351790,24351864,24351907,24352018,24352020,24352030&req_id=dd6fa14d018ea3ee&cms_redirect=yes&cmsv=e&met=1747985280,&mh=OI&mip=115.98.66.146&mm=34&mn=sn-npoe7ns7&ms=ltu&mt=1747984672&mv=u&mvi=1&pl=22&rms=ltu,au&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ACuhMU0wRQIgEnRDhw6nGYMMJYQvEQmqfv_uYwE0inGVAk0O1fRFMvkCIQCM5SM8_nOPrqFSIvr8FsRV54HK968oPuWK8U6-2zGdZw%3D%3D" type="video/mp4">
+</video>
+<p id="videoMsg"></p>
+
+<script>
+function videoReady() {
+  document.getElementById("videoMsg").innerText = "Video ready to play";
+}
+window.onbeforeunload = function() {
+  return "You have unsaved changes!";
+};
+</script>
+<select id="eventType" onchange="savePreference(this.value)">
+  <option value="">Choose Event</option>
+  <option value="music">Music</option>
+  <option value="sports">Sports</option>
+</select>
+<button onclick="clearPreferences()">Clear Preferences</button>
+
+<script>
+function savePreference(value) {
+  localStorage.setItem("preferredEvent", value);
+}
+window.onload = function() {
+  let saved = localStorage.getItem("preferredEvent");
+  if (saved) document.getElementById("eventType").value = saved;
+}
+function clearPreferences() {
+  localStorage.clear();
+  sessionStorage.clear();
+}
+</script>
+<button onclick="findEvents()">Find Nearby Events</button>
+<p id="location"></p>
+
+<script>
+function findEvents() {
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      document.getElementById("location").innerText = 
+        `Lat: ${pos.coords.latitude}, Lon: ${pos.coords.longitude}`;
+    },
+    (err) => {
+      alert("Error: " + err.message);
+    },
+    { enableHighAccuracy: true, timeout: 10000 }
+  );
+}
+</script>
